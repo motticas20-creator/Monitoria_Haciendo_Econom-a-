@@ -140,18 +140,21 @@ datos_ejemplo <- data.frame(A)
 datos_ejemplo
 
 
+
 ### CARGAR DATOS  
+setwd("/Users/mariaalejandramottaromero/Documents/Monitoria- Haciendo Economía")
 #CSV
-nombres <- read.csv("lista_nombres.csv") 
-nombres2 <- read.csv("lista_nombres.csv", stringsAsFactors = TRUE)
-#stringAsFactor : Todas las variables string las vuelve factores o niveles (ejemplo el pais)
+nombres <- read.csv("college_student_placement_dataset.csv") 
+nombres2 <- read.csv("placement-dataset.csv", stringsAsFactors = TRUE)
+#stringAsFactor : Todas las variables string las vuelve factores o niveles (ejemplo la ciudad)
+class(nombres2$city)
 
 #Delimitados (TXT)
-autos <- read.delim("autos.txt", header=TRUE) # Pone encabezado
-autos2 <- read.table ("autos.txt", sep="\t", header = TRUE) # "\t" : separado por espacios
-estudiantes<-read.table("estudiantes.txt", sep ="\\", header = TRUE) # "\\" : separado por \
-estudiantes2 <- read.table("estudiantes_2.txt", sep=";", header = TRUE) # ";" : separado por ;
-estudiantes3 <- read.table("estudiantes_3.txt", sep=";", header = FALSE, col.names = c("Nombre", "Nota", "Aprobacion")) # ";" : separado por ;
+academico <- read.delim("iris.txt", header=TRUE) # Pone encabezado
+academico2 <- read.table ("iris.txt", sep="\t", header = TRUE) # "\t" : separado por espacios (como en Python)
+Requisitos<-read.table("requirements.txt", sep ="\\", header = TRUE) # "\\" : separado por \
+Requisitos2 <- read.table("requirements.txt", sep=";", header = TRUE) # ";" : separado por ;
+Requisitos3 <- read.table("requirements.txt", sep=";", header = FALSE, col.names = c("Nombre", "Nota", "Aprobacion")) # ";" : separado por ;
 
 #Excel  
 install.packages("readxl")
