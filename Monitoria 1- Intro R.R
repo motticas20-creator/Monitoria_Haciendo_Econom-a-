@@ -6,8 +6,6 @@
 ## Siempre limpiar el environment (memoria de R) antes de empezar a trabajar, 
 ## se hace con el codigo rm(list = ls())
 ## Definir el directorio antes de empezar a trabajar, se hace asi: setwd("el path a la carpeta")
-# Este es el script de la primera monitoria 
-# Esto es una modificación 
 
 ## Limpiar  enviroment
 rm(list = ls())
