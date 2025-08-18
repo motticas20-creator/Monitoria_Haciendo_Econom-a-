@@ -1,4 +1,6 @@
-# Monitoria 1 -Haciendo Economia - María Alejandra Motta 
+# Monitoria 1 -Haciendo Economia 
+
+#Autor: María Alejandra Motta 
 
 ##TIPS
 ## Para correr lineas del script windows (ctrl + enter) y Mac (cmd + enter)
